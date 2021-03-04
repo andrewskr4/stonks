@@ -42,7 +42,8 @@ else:
         pairs.append(pair)
     if (len(sys.argv)==3):
         shuffle(pairs)
-        sample += pairs[:10]
+        temp = int(sys.argv[2])
+        sample += pairs[:temp]
         print(sample)
 print(upgrades)
 
@@ -80,7 +81,8 @@ else:
         price = (change.text).split("\n")[2]
         #if (len(sys.argv)==1):
         #    g.write(sample[i] + " " +change.text+"\n")
-        print(str(ticker)+" "+str(price)+" "+ str(old_price) + " " + str(100*(float(price)-float(old_price))/float(old_price))+"%")
+        #print(str(ticker)+" "+str(price)+" "+ str(old_price) + " " + str(100*(float(price)-float(old_price))/float(old_price))+"%")
+        print(ticker, old_price)
         num = 100*(float(price)-float(old_price)/float(old_price))
         total += float(num)
     print(total)
