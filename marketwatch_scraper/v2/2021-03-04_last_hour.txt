@@ -1,0 +1,36 @@
+GIB 76.00 Edward Jones Buy
+FVRR 225.35 MKM Partners Neutral
+QCOM 128.04 Piper Sandler Overweight
+BFS 37.27 B. Riley FBR Buy
+SNDR 24.60 B of A Securities Buy
+WMB 24.26 ScotiaBank Sector Outperform
+UBA 16.77 B. Riley FBR Buy
+ANTM 323.20 Truist Securities Buy
+TGI 16.80 B of A Securities Buy
+OKTA 228.88 Canaccord Genuity Buy
+WERN 45.97 B of A Securities Buy
+KNX 45.16 B of A Securities Buy
+JBHT 150.64 B of A Securities Buy
+USX 10.23 B of A Securities Buy
+BE 26.38 Raymond James Outperform
+PCG 10.71 Wells Fargo Equal-Weight
+BEP 40.89 Wells Fargo Equal-Weight
+WEC 82.50 Wells Fargo Overweight
+SNOW 258.32 Deutsche Bank Neutral
+ATO 89.24 Mizuho Buy
+PASG 19.69 Goldman Sachs Buy
+NLSN 23.92 BMO Capital Outperform
+CBOE 98.01 Piper Sandler Overweight
+CMI 258.77 Jefferies Buy
+SITC 12.92 KeyBanc Overweight
+KRG 19.66 KeyBanc Overweight
+UBSFY 15.91 Citigroup Buy
+FSR 22.55 Wolfe Research Peer Perform
+FMNB 15.26 Piper Sandler Overweight
+ITRI 116.46 Argus Research Buy
+WSC 26.44 Baird Outperform
+EURMF 0.4054 HSBC Hold
+IRDM 37.41 Raymond James Outperform
+DDD 25.66 Loop Capital Hold
+ETN 134.17 Morgan Stanley Overweight
+AA 28.68 Goldman Sachs Buy

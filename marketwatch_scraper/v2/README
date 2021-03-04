@@ -1,0 +1,20 @@
+Marketwatch scraper v2
+
+scraper.py <*.txt> <int>:
+	with no args:
+	     Writes tickers, prices, and latest upgrade rating at time of running to <date>.txt
+	With txt:
+	     Reads .txt file prints updated prices of each ticker and % change to screen
+	With txt and int:
+	     Reads .txt and randomly selects <int> tickers from file that have a recent upgrade to 'Buy'
+
+cal_num_stocks.py <*.txt> <int>:
+	Calculates number of stocks from txt to buy given input <int> investment
+
+
+Usually, run scraper.py without args in last hour of day. rename to <date>_last_hour.txt.
+Then run with all args to get list of stocks to buy. Copy and paste this list to <date>_last_hour_rand_10.txt
+Run cal_num_stocks.py to get amount of each stock to buy.
+Buy this amount of each stock before end of day.
+
+Next day, run scraper.py with .txt for day before's random 10 (<yesterday's date>_last_hour_rand_10.txt) to monitor.

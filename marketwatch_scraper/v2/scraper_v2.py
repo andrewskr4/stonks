@@ -37,7 +37,7 @@ if (len(sys.argv)==1):
             rating_url = 'https://www.benzinga.com/stock/'+str(tds[1].text)+'/ratings'
             rating_page = urlopen(rating_url).read()
             rating_soup = BeautifulSoup(rating_page, features="lxml")
-            print(rating_soup)
+            #print(rating_soup)
             for ratetr in rating_soup.find_all('tr')[1:]:
                 #print(tr)
                 ratetds = ratetr.find_all('td')
