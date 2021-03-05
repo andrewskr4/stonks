@@ -1,0 +1,5 @@
+scraper v4/
+
+Scrape website for full list of NYSE tickers. Search these tickers pages on
+marketwatch for ones that have the overall recommendation as buy. Buy these,
+hold for an amount of time (5 days??) then sell and do it all again.
