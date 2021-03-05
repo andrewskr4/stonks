@@ -53,7 +53,7 @@ if (len(sys.argv)==1):
             g.write(entry)
             
 
-if sys.argv[2] == "monitor":
+if (len(sys.argv)>1 and sys.argv[2] == "monitor"):
     f = open(sys.argv[1], 'r')
     #f = open(d+".txt", 'r')
     lines = f.readlines()
@@ -69,7 +69,7 @@ if sys.argv[2] == "monitor":
         print(ticker+" "+old_price+" "+price+" "+str(100*(float(price)-float(old_price))/float(old_price)))
         total_change+=100*(float(price)-float(old_price))/float(old_price)
     print(total_change)
-if sys.argv[2] == "random":
+if (len(sys.argv)>1 and sys.argv[2] == "random"):
     temp = int(sys.argv[3])
     f = open(sys.argv[1], 'r')
     g = open(sys.argv[1].split(".")[0]+"_rand_"+str(temp)+".txt", 'w')

@@ -1,0 +1,42 @@
+NXTC 12.40 Buy
+ORCL 66.59 Overweight
+LMNR 15.84 Overweight
+CDLX 126.02 Neutral
+AZUL 20.06 Buy
+SBAC 235.92 Strong Buy
+BALY 52.30 Buy
+XOM 59.92 Hold
+PFS 22.00 Outperform
+CSCO 45.06 Overweight
+DAR 67.93 Overweight
+PAYC 348.69 Buy
+MIK 21.76 Hold
+GIB 75.69 Buy
+FVRR 224.30 Neutral
+QCOM 128.52 Overweight
+BFS 37.38 Buy
+SNDR 24.44 Buy
+WMB 24.26 Sector Outperform
+UBA 16.81 Buy
+ANTM 321.49 Buy
+TGI 17.15 Buy
+OKTA 230.00 Buy
+WERN 45.50 Buy
+KNX 44.49 Buy
+JBHT 149.29 Buy
+USX 10.10 Buy
+BE 26.00 Outperform
+PCG 10.69 Equal-Weight
+BEP 40.02 Equal-Weight
+WEC 82.28 Overweight
+SNOW 237.22 Neutral
+ATO 88.90 Buy
+PASG 19.43 Buy
+NLSN 23.86 Outperform
+CBOE 98.22 Overweight
+CMI 258.61 Buy
+SITC 13.04 Overweight
+KRG 19.56 Overweight
+UBSFY 15.88 Buy
+FSR 22.50 Peer Perform
+FMNB 15.10 Overweight

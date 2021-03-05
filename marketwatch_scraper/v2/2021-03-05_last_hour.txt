@@ -1,0 +1,44 @@
+PETS 33.66 Buy
+HA 26.16 Peer Perform
+MWK 34.01 Buy
+ZS 174.57 Buy
+BDRBF 0.5480 Outperform
+WDC 68.41 Buy
+BA 221.52 Buy
+MCRB 19.18 Buy
+NXTC 11.08 Buy
+ORCL 70.39 Overweight
+LMNR 16.95 Overweight
+CDLX 128.41 Neutral
+AZUL 19.95 Buy
+SBAC 241.76 Strong Buy
+BALY 59.12 Buy
+XOM 60.78 Hold
+PFS 22.26 Outperform
+CSCO 46.66 Overweight
+DAR 74.03 Overweight
+PAYC 372.43 Buy
+MIK 21.84 Hold
+GIB 76.68 Buy
+FVRR 221.01 Neutral
+QCOM 130.34 Overweight
+BFS 38.56 Buy
+SNDR 24.84 Buy
+WMB 24.19 Sector Outperform
+UBA 16.78 Buy
+ANTM 332.48 Buy
+TGI 17.81 Buy
+OKTA 213.67 Buy
+WERN 45.77 Buy
+KNX 45.43 Buy
+JBHT 154.93 Buy
+USX 10.22 Buy
+BE 25.48 Outperform
+PCG 10.81 Equal-Weight
+BEP 38.96 Equal-Weight
+WEC 84.46 Overweight
+SNOW 238.23 Neutral
+ATO 92.24 Buy
+PASG 19.49 Buy
+NLSN 24.68 Overweight
+CBOE 105.15 Overweight

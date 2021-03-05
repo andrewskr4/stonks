@@ -2,7 +2,8 @@ from bs4 import BeautifulSoup
 from datetime import date
 import sys
 from random import shuffle
-
+from http.cookiejar import CookieJar
+import urllib
 from urllib.request import urlopen
 
 upgrades_url = "https://www.marketwatch.com/tools/upgrades-downgrades"
@@ -21,6 +22,24 @@ first=True
 today = date.today()
 d = today.strftime("%Y-%m-%d")
 #print(len(sys.argv))
+tickers = []
+
+cookieProcessor = urllib.request.HTTPCookieProcessor()
+opener = urllib.request.build_opener(cookieProcessor)
+
+letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+for letter in letters:
+    nyse_list_url = "https://eoddata.com/stocklist/NYSE/"+str(letter)+".htm"
+    nyse_list_page = urlopen(nyse_list_url).read()
+    nyse_list_soup = BeautifulSoup(nyse_list_page, features="lxml")
+    for tr in nyse_list_soup.find_all('tr')[1:]:
+        tds = tr.find_all('td')
+        print(td[0].text)
+        ticker.append(td[0].text)
+
+
+
+"""
 if (len(sys.argv)==1):
     g = open(d+".txt", 'w')
     for tr in upgrades_soup.find_all('tr')[2:]:
@@ -86,5 +105,5 @@ if (len(sys.argv)>1 and sys.argv[2] == "random"):
     for ticker, price in sample:
         g.write(ticker+" "+price+"\n")
         
-
+"""
 
