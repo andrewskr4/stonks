@@ -1,0 +1,54 @@
+ENPH 142.00 Market Perform
+CABO 1,800.00 Outperform
+ZTS 145.68 Buy
+WTRH 3.3500 Buy
+SPR 47.10 Positive
+TGT 174.04 Buy
+CLVT 21.53 Overweight
+VRSK 168.50 Outperform
+SHBI 15.70 Outperform
+VFC 78.77 Buy
+ACN 248.04 Positive
+FSLY 64.00 Neutral
+NEE 71.15 Outperform
+FSLR 73.30 Neutral
+BE 25.60 Outperform
+PTON 104.78 Buy
+IOVA 33.53 Buy
+ETN 137.69 Buy
+KO 51.15 Outperform
+ICLR 180.03 Outperform
+TTD 660.00 Overweight
+IQV 188.78 Overweight
+PETS 33.78 Buy
+HA 26.61 Peer Perform
+MWK 33.50 Buy
+ZS 173.20 Buy
+BDRBF 0.5400 Outperform
+WDC 68.61 Buy
+BA 222.55 Buy
+MCRB 19.19 Buy
+NXTC 11.31 Buy
+ORCL 70.09 Overweight
+LMNR 16.90 Overweight
+CDLX 128.06 Neutral
+AZUL 19.46 Buy
+SBAC 242.19 Strong Buy
+BALY 60.00 Buy
+XOM 61.05 Hold
+PFS 22.52 Outperform
+CSCO 46.00 Overweight
+DAR 73.53 Overweight
+PAYC 375.53 Buy
+MIK 21.62 Hold
+GIB 76.89 Buy
+FVRR 215.00 Neutral
+QCOM 128.05 Overweight
+BFS 39.10 Buy
+SNDR 24.74 Buy
+WMB 24.50 Sector Outperform
+UBA 17.01 Buy
+ANTM 333.60 Buy
+TGI 17.66 Buy
+OKTA 215.29 Buy
+WERN 45.93 Buy

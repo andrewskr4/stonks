@@ -17,6 +17,7 @@ total_change = 0
 opening_cost = 0
 current_value = 0
 frac_increase = 0
+investment = 6000
 first=True
 today = date.today()
 d = today.strftime("%Y-%m-%d")
@@ -60,6 +61,7 @@ if (len(sys.argv)>1 and sys.argv[2] == "monitor"):
     #f = open(d+".txt", 'r')
     lines = f.readlines()
     total_change=0
+    num_tickers = len(lines)
     for line in lines:
         ticker = line.split()[0]
         old_price = line.split()[1]
@@ -69,8 +71,9 @@ if (len(sys.argv)>1 and sys.argv[2] == "monitor"):
         change = ticker_soup.find(lambda tag: tag.name == 'h3' and tag.get('class') == ['intraday__price'])
         price = (change.text).split("\n")[2]
         print(ticker+" "+old_price+" "+price+" "+str(100*(float(price)-float(old_price))/float(old_price)))
-        total_change+=100*(float(price)-float(old_price))/float(old_price)
-    print(total_change)
+        total_change+=(investment/num_tickers)*(float(price)-float(old_price))/float(old_price)
+    total_change+= investment
+    print(100*(total_change-investment)/investment)
 if (len(sys.argv)>1 and sys.argv[2] == "random"):
     temp = int(sys.argv[3])
     f = open(sys.argv[1], 'r')
