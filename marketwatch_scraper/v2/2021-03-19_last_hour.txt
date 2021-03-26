@@ -1,0 +1,25 @@
+PODD 259.70 Buy
+NUE 71.06 Buy
+WOOF 23.65 Buy
+RDS.A 42.11 Hold
+PGR 90.92 Buy
+EVOP 28.46 Buy
+SEDG 279.19 Overweight
+ENPH 154.29 Positive
+F 12.85 Overweight
+SBUX 107.60 Outperform
+NAVI 13.81 Buy
+KDP 34.41 Overweight
+NGG 58.73 Buy
+HHR 36.80 Neutral
+HIG 68.00 Neutral
+EVR 138.42 Conviction Buy
+PGRE 10.36 Neutral
+ACN 267.45 Market Perform
+WSM 176.98 Buy
+USB 55.52 Neutral
+TMO 447.98 Overweight
+OLN 40.25 Equal-Weight
+UPST 121.99 Market Outperform
+BEKE 63.66 Buy
+RVLV 52.53 Buy

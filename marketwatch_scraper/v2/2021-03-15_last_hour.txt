@@ -1,0 +1,23 @@
+PBR 8.16 Neutral
+EC 13.89 Buy
+DOMO 65.66 Buy
+ITRM 1.6089 Buy
+FNKO 18.86 Neutral
+OFC 28.22 Buy
+ARGO 53.78 Buy
+E 24.77 Buy
+MGM 40.74 Buy
+DOC 18.61 Overweight
+DG 194.99 Overweight
+RBNC 27.45 Outperform
+PSTG 24.02 Strong Buy
+FI 4.3700 Equal-Weight
+SYN 0.88 Buy
+UBER 60.00 Buy
+MDB 322.19 Buy
+SWK 192.96 Neutral
+WES 19.74 Overweight
+LAZR 28.80 Outperform
+FINV 7.51 Buy
+YALA 23.80 Outperform
+DOCU 218.24 Overweight
