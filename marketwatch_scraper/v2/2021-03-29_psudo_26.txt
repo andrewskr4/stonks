@@ -1,0 +1,41 @@
+VIAC 46.26 Hold
+BIDU 206.74 Buy
+PTCT 49.21 Sector Perform
+HRMY 28.32 Buy
+TWTR 62.36 Buy
+CARR 41.58 Overweight
+JCI 60.89 Overweight
+COWN 35.49 Buy
+OTIS 69.25 Hold
+ARRY 28.75 Equal-Weight
+SE 209.00 Buy
+VIAC 46.26 Hold
+BEN 29.75 Outperform
+OVV 24.64 Buy
+RE 250.15 Buy
+CEQP 27.17 Overweight
+BKYI 3.4900 Buy
+SPH 15.06 Buy
+RFP 10.39 Buy
+PDFS 18.44 Buy
+MOMO 14.33 Buy
+VRAY 4.6200 Buy
+BTI 39.08 Buy
+IIVI 70.30 Buy
+MAIN 39.29 Outperform
+LITE 91.80 Strong Buy
+CRTO 32.60 Market Outperform
+OLN 39.20 Outperform
+PLMR 69.14 Overweight
+NEXT 2.2900 Equal-Weight
+NKE 132.74 Outperform
+RH 575.00 Overweight
+MTSI 58.46 Neutral
+AYI 145.64 Outperform
+MO 52.27 Buy
+TZOO 16.38 Buy
+SBAC 282.57 Overweight
+CCI 173.29 Overweight
+AMT 237.24 Overweight
+INDO 6.21 Outperform
+QADA 66.01 Buy

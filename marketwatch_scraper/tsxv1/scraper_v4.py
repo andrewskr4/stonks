@@ -2,13 +2,27 @@ from bs4 import BeautifulSoup
 from datetime import date
 import sys
 from random import shuffle
-from http.cookiejar import CookieJar
+#from http.cookiejar import CookieJar
 import urllib
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
 
-upgrades_url = "marketbeat.com/ratings"
+upgrades_url = "https://www.marketbeat.com/ratings/canada/"
+#driver = webdriver.Firefox()
+#driver.get(upgrades_url)
+#time.sleep(5)
 
-upgrades_page = urlopen(upgrades_url).read()
+
+#inputElement = driver.find_element_by_id("cphPrimaryContent_txtStartDate")
+#inputElement.clear()
+#inputElement.send_keys('3/31/2021')
+#upgrades_page = driver.page_source
+print("before url open")
+req = Request(upgrades_url, headers={'User-Agent': 'Mozilla/5.0'})
+upgrades_page = urlopen(req).read()
+print("read_url")
 upgrades_soup = BeautifulSoup(upgrades_page, features="lxml")
 pairs = []
 sample = []
@@ -24,55 +38,44 @@ d = today.strftime("%Y-%m-%d")
 #print(len(sys.argv))
 tickers = []
 
-cookieProcessor = urllib.request.HTTPCookieProcessor()
-opener = urllib.request.build_opener(cookieProcessor)
-
-letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-for letter in letters:
-    nyse_list_url = "https://eoddata.com/stocklist/NYSE/"+str(letter)+".htm"
-    nyse_list_page = urlopen(nyse_list_url).read()
-    nyse_list_soup = BeautifulSoup(nyse_list_page, features="lxml")
-    for tr in nyse_list_soup.find_all('tr')[1:]:
-        tds = tr.find_all('td')
-        print(td[0].text)
-        ticker.append(td[0].text)
+#cookieProcessor = urllib.request.HTTPCookieProcessor()
+#opener = urllib.request.build_opener(cookieProcessor)
 
 
 
-"""
 if (len(sys.argv)==1):
     g = open(d+".txt", 'w')
-    for tr in upgrades_soup.find_all('tr')[2:]:
+    for tr in upgrades_soup.find_all('tr')[3:]:
         tds = tr.find_all('td')
-        if(tds[3].text == 'Upgrades'):
+        if(len(tds))==1:
+            continue
+        tds1 = str(tds[1].text)
+        a_list = tds1.split()
+        new_string = " ".join(a_list)
+        if(new_string == "Target Raised by"):
+            already_in = False
             average_rating = " "
-            #ratings = []
-            #upgrades.append(tds[1].text)
-            ticker = tds[1].text
+            #ticker = tds[0].text
+            ticker_xml = tr.find(lambda tag: tag.name == 'div' and tag.get('class') == ['ticker-area'])
+            ticker = ticker_xml.text
+            for tick in tickers:
+                if tick == ticker:
+                    already_in = True
+            if(already_in):
+                continue
+            tickers.append(ticker)
+            tds3 = tds[3].text
+            price = tds3.split("-")
+            #print(len(price))
+            if (len(price)==1):
+                price = tds3.split("+")
             if(str(ticker) == 'EURMF'):
                 continue
-            #firms.append(tds[4].text)
-            #print(tds[1].text, tds[3].text)
-            rating_url = 'https://www.marketwatch.com/investing/stock/'+ticker
-            rating_page = urlopen(rating_url).read()
-            rating_soup = BeautifulSoup(rating_page, features="lxml")
-            rating_ul = rating_soup.find(lambda tag: tag.name == 'ul' and tag.get('class') == ['analyst__rating'])
-
-            #print(ticker)
-            for li in rating_ul.find_all('li'):
-                if(str(li).split("\"")[1] == 'analyst__option active'):
-                    average_rating = (str(li).split("\"")[2]).split("<")[0]
-                    average_rating = average_rating.split(">")[1]
-
-            ticker_url = 'https://www.marketwatch.com/investing/stock/'+ticker
-            ticker_page = urlopen(ticker_url).read()
-            ticker_soup = BeautifulSoup(ticker_page, features="lxml")
-            change = ticker_soup.find(lambda tag: tag.name == 'h3' and tag.get('class') == ['intraday__price'])
-            price = (change.text).split("\n")[2]
-            entry = str(ticker+" "+ price+" "+ average_rating+"\n")
-            print(entry)
-            
+            price = price[0].split("$")[-1]
+            print(ticker, price)
+            entry = str(ticker+" "+price+"\n")
             g.write(entry)
+
 
 if (len(sys.argv)>1 and sys.argv[2] == "monitor"):
     f = open(sys.argv[1], 'r')
@@ -82,14 +85,20 @@ if (len(sys.argv)>1 and sys.argv[2] == "monitor"):
     for line in lines:
         ticker = line.split()[0]
         old_price = line.split()[1]
-        ticker_url = 'https://www.marketwatch.com/investing/stock/'+ticker
-        ticker_page = urlopen(ticker_url).read()
+        ticker_url = 'https://www.marketbeat.com/stocks/TSE/'+ticker+'/price-target/'
+        req = Request(ticker_url, headers={'User-Agent': 'Mozilla/5.0'})
+        ticker_page = urlopen(req).read()
         ticker_soup = BeautifulSoup(ticker_page, features="lxml")
-        change = ticker_soup.find(lambda tag: tag.name == 'h3' and tag.get('class') == ['intraday__price'])
-        price = (change.text).split("\n")[2]
+        change = ticker_soup.find(lambda tag: tag.name == 'div' and tag.get('class') == ['price'])
+        #print(change)
+        price = (change.text).split()[0]
+        price = price.split('$')[1]
+        #print(price)
         print(ticker+" "+old_price+" "+price+" "+str(100*(float(price)-float(old_price))/float(old_price)))
         total_change+=100*(float(price)-float(old_price))/float(old_price)
     print(total_change)
+
+    
 if (len(sys.argv)>1 and sys.argv[2] == "random"):
     temp = int(sys.argv[3])
     f = open(sys.argv[1], 'r')
@@ -105,5 +114,5 @@ if (len(sys.argv)>1 and sys.argv[2] == "random"):
     for ticker, price in sample:
         g.write(ticker+" "+price+"\n")
         
-"""
+
 
